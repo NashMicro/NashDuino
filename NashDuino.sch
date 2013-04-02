@@ -66,10 +66,17 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
@@ -4856,6 +4863,96 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </deviceset>
 </devicesets>
 </library>
+<library name="SoftDust">
+<description>Various parts created by Ian Lee when they couldn't be found anywhere else.  Your use is unrestricted.  My guarantee is non-existent.</description>
+<packages>
+<package name="2X5_1.27MM">
+<description>2x5 pins, 1.27mm pitch "Gadgeteer Socket"</description>
+<wire x1="-2.5" y1="6.2" x2="2.5" y2="6.2" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-6.2" x2="-2.5" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.9" x2="-0.5" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-1.9" x2="-0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="2" x2="-2.5" y2="2" width="0.127" layer="21"/>
+<smd name="1" x="-2" y="2.58" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="2" x="2" y="2.58" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="3" x="-2" y="1.31" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="4" x="2" y="1.31" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="5" x="-2" y="0.04" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="6" x="2" y="0.04" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="7" x="-2" y="-1.23" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="8" x="2" y="-1.23" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="9" x="-2" y="-2.5" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<smd name="10" x="2" y="-2.5" dx="0.74" dy="2.6" layer="1" rot="R90"/>
+<text x="-3.1684" y="3.3" size="0.6096" layer="21" ratio="12">1</text>
+<text x="-1.94" y="6.85" size="0.8128" layer="25" ratio="12">&gt;NAME</text>
+<text x="-2.54" y="-7.62" size="0.8128" layer="27" ratio="12">&gt;VALUE</text>
+<wire x1="2.54" y1="6.223" x2="2.54" y2="3.2385" width="0.127" layer="21"/>
+<wire x1="2.54" y1="1.8542" x2="2.54" y2="2.0066" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0.5842" x2="2.54" y2="0.7112" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-0.6858" x2="2.54" y2="-0.5588" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-1.9304" x2="2.54" y2="-1.8288" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-6.1976" x2="2.54" y2="-3.1242" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-6.1722" x2="-2.54" y2="-3.0988" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="6.1976" x2="-2.54" y2="3.2258" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="IC-10_PIN">
+<text x="-2.794" y="8.128" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.048" y="4.572" size="1.27" layer="95">1</text>
+<text x="2.032" y="4.572" size="1.27" layer="95">2</text>
+<text x="-3.048" y="1.778" size="1.27" layer="95">3</text>
+<text x="-3.048" y="-0.762" size="1.27" layer="95">5</text>
+<text x="-3.048" y="-3.302" size="1.27" layer="95">7</text>
+<text x="-3.048" y="-5.842" size="1.27" layer="95">9</text>
+<text x="2.032" y="2.032" size="1.27" layer="95">4</text>
+<text x="2.032" y="-0.762" size="1.27" layer="95">6</text>
+<text x="2.032" y="-3.302" size="1.27" layer="95">8</text>
+<text x="1.524" y="-5.842" size="1.27" layer="95">10</text>
+<pin name="P$1" x="-10.16" y="5.08" visible="off" length="middle"/>
+<pin name="P$2" x="10.16" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$3" x="-10.16" y="2.54" visible="off" length="middle"/>
+<pin name="P$4" x="10.16" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$5" x="-10.16" y="0" visible="off" length="middle"/>
+<pin name="P$6" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$7" x="-10.16" y="-2.54" visible="off" length="middle"/>
+<pin name="P$8" x="10.16" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$9" x="-10.16" y="-5.08" visible="off" length="middle"/>
+<pin name="P$10" x="10.16" y="-5.08" visible="off" length="middle" rot="R180"/>
+<text x="-3.302" y="-9.398" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GADGETEER-SOCKET">
+<gates>
+<gate name="G$1" symbol="IC-10_PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2X5_1.27MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$10" pad="10"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
+<connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4919,6 +5016,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="C9" library="eagle-ltspice" deviceset="C" device="C1206" value="0.1uF"/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
+<part name="U$1" library="SoftDust" deviceset="GADGETEER-SOCKET" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="P+11" library="supply1" deviceset="+5V" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4936,6 +5037,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <text x="172.72" y="215.9" size="5.08" layer="94">http://creativecommons.org/license/by-sa/2.5/</text>
 <text x="167.64" y="175.26" size="3.81" layer="94">Arduino</text>
 <text x="317.5" y="175.26" size="3.81" layer="94">USB</text>
+<text x="20.32" y="154.94" size="3.81" layer="94">Gadgeteer Socket 
+          [UI]</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -5009,6 +5112,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <attribute name="VALUE" x="402.336" y="68.199" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY12" gate="GND" x="386.08" y="58.42"/>
+<instance part="U$1" gate="G$1" x="40.64" y="137.16"/>
+<instance part="+3V3" gate="G$1" x="27.94" y="149.86"/>
+<instance part="P+11" gate="1" x="55.88" y="149.86"/>
+<instance part="SUPPLY13" gate="GND" x="55.88" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -5131,6 +5238,12 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="378.46" y1="66.04" x2="378.46" y2="63.5" width="0.3048" layer="91"/>
 <wire x1="378.46" y1="63.5" x2="386.08" y2="63.5" width="0.3048" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$10"/>
+<pinref part="SUPPLY13" gate="GND" pin="GND"/>
+<wire x1="50.8" y1="132.08" x2="55.88" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="132.08" x2="55.88" y2="124.46" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -5198,6 +5311,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="78.74" y1="226.06" x2="101.6" y2="226.06" width="0.3048" layer="91"/>
 <label x="88.9" y="226.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$8"/>
+<wire x1="50.8" y1="134.62" x2="60.96" y2="134.62" width="0.1524" layer="91"/>
+<label x="53.34" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="A5" class="0">
 <segment>
@@ -5209,6 +5327,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="JP2" gate="A" pin="7"/>
 <wire x1="78.74" y1="228.6" x2="101.6" y2="228.6" width="0.3048" layer="91"/>
 <label x="88.9" y="228.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$9"/>
+<wire x1="30.48" y1="132.08" x2="20.32" y2="132.08" width="0.1524" layer="91"/>
+<label x="22.86" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
@@ -5296,6 +5419,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="200.66" y1="132.08" x2="208.28" y2="132.08" width="0.3048" layer="91"/>
 <label x="203.2" y="132.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$3"/>
+<wire x1="30.48" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="22.86" y="139.7" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D3" class="0">
 <segment>
@@ -5331,6 +5459,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="IC1" gate="G$1" pin="PD5(T1)"/>
 <wire x1="200.66" y1="124.46" x2="208.28" y2="124.46" width="0.3048" layer="91"/>
 <label x="203.2" y="124.46" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$6"/>
+<wire x1="50.8" y1="137.16" x2="60.96" y2="137.16" width="0.1524" layer="91"/>
+<label x="53.34" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -5540,6 +5673,12 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="P+10" gate="1" pin="+5V"/>
 <wire x1="396.24" y1="165.1" x2="396.24" y2="175.26" width="0.3048" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="P+11" gate="1" pin="+5V"/>
+<wire x1="50.8" y1="142.24" x2="55.88" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="142.24" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -5557,6 +5696,12 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="309.88" y1="129.54" x2="271.78" y2="129.54" width="0.3048" layer="91"/>
 <junction x="271.78" y="129.54"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<wire x1="30.48" y1="142.24" x2="27.94" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="142.24" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="TX" class="0">
 <segment>
@@ -5568,6 +5713,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <pinref part="IC2" gate="1" pin="RXD"/>
 <wire x1="337.82" y1="154.94" x2="350.52" y2="154.94" width="0.3048" layer="91"/>
 <label x="340.36" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$4"/>
+<wire x1="50.8" y1="139.7" x2="60.96" y2="139.7" width="0.1524" layer="91"/>
+<label x="53.34" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -5643,6 +5793,11 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <wire x1="226.06" y1="137.16" x2="233.68" y2="137.16" width="0.3048" layer="91"/>
 <label x="228.6" y="137.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$5"/>
+<wire x1="30.48" y1="137.16" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
+<label x="22.86" y="137.16" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -5699,4 +5854,10 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
