@@ -1,4 +1,4 @@
 NashDuino
 =========
 
-NashMicro flavored custom Arduino.  Schematic based on the Arduino Nano v3.0.
+NashMicro flavored custom Arduino. Schematic and PCB based on the Arduino Nano v3.0.
